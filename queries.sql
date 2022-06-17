@@ -59,7 +59,7 @@ UPDATE lot SET name_lot = CONCAT(name_lot, 500) /* Здесь пишем на ч
 
 /* Получаем список ставок для лота по его идентификатору с сортировкой по дате. */
 
-SELECT lot.login, rate.sum, rate.date_create
+SELECT rate.login, rate.sum, rate.date_create
 FROM lot INNER JOIN rate ON lot.id_lot = rate.id_lot
 WHERE lot.id_lot = 1 /* Нужный id */
 ORDER BY rate.date_create DESC;

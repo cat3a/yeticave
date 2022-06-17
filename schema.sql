@@ -26,7 +26,7 @@ CREATE TABLE lot (
   name_lot CHAR(128) NOT NULL,
   description TEXT NOT NULL,
   image TEXT NOT NULL,
-  start_price DECIMAL NOT NULL,
+  start_price DECIMAL(10,2) NOT NULL,
   end_date DATE NOT NULL,
   rate_step DECIMAL(10,2) NOT NULL,
   category_code CHAR(128) NOT NULL,
